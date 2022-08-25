@@ -1,18 +1,18 @@
 public class Calculator{
   
   public static void throwANumber(int throwMe)throws Exception{
-    throw new Exception(""I don't like the number "" + throwMe + "", you can have it back!"");
+    throw new Exception("I do not want this code" + throwMe + ",I do not want this code!");
   }
   
   public static void catchIt(int catchMe){
     try{
       throwANumber(catchMe);
     }catch(RuntimeException ex){
-      System.out.println(""You'll never see this!"");
+      System.out.println("This won't be seen");
     }catch(Exception e){
       System.out.println(e.getMessage());
     }finally{
-      System.out.println(""I'm in the finally block"");
+      System.out.println("Finally");
     }
   }
 
@@ -25,11 +25,11 @@ public class Calculator{
     try{
       calculate(x, y);
     }catch(ArithmeticException ab){
-      System.out.println(""Don't divide by 0!"");
+      System.out.println("You cannot divide by zero!");
     }catch(Exception bc){
-      System.out.println(""some other exception"");
+      System.out.println("Another One");
     }finally{
-      System.out.println(""This will always print out"");
+      System.out.println("Print this at all times");
     }
    }
   }
