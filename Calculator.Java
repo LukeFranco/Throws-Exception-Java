@@ -1,7 +1,7 @@
 public class Calculator{
   
   public static void throwANumber(int throwMe)throws Exception{
-    throw new Exception("I do not want this code" + throwMe + ",I do not want this code!");
+    throw new Exception("I do not want this code" + throwMe + "I do not want this code!");
   }
   
   public static void catchIt(int catchMe){
